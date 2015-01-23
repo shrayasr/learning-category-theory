@@ -6,6 +6,9 @@
   [x]
   (println x "Hello, World!"))
 
+(defn id [& args]
+  (identity args))
+
 (defn -main 
   []
-  (foo ""))
+  (println (id 1 2 3)))
